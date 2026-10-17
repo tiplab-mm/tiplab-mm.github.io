@@ -25,7 +25,10 @@
   .fb:active { box-shadow:0 2px 0 #0a357c, 0 6px 12px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.4); }
   .ic { font-size:26px; }
   .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-  .card { background:#0d2440; border:1px solid #1d3d63; border-radius:12px; padding:14px 16px; }
+  a.card { display:block; text-decoration:none; color:inherit; background:#0d2440; border:1px solid #1d3d63; border-radius:12px; padding:14px 16px; box-shadow:0 4px 0 #081426, 0 8px 16px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.08); transition:transform .08s ease, box-shadow .08s ease; }
+  a.card:active { transform:translateY(3px); box-shadow:0 1px 0 #081426, 0 4px 8px rgba(0,0,0,.3); }
+  a.card .go { display:block; margin-top:8px; font-size:13px; font-weight:700; color:#ffd95e; }
+  .hint { font-size:14px; color:#9db4c8; margin:-4px 0 12px; }
   .card b { color:#39e6c3; font-size:16.5px; }
   .card p { font-size:14.5px; color:#b9cbdc; margin-top:4px; }
   .note { background:#0a2e26; border:1px solid #155e4b; border-radius:12px; padding:16px 18px; font-size:15.5px; color:#d7efe6; }
@@ -47,13 +50,14 @@
       <a class="btn fb" href="https://www.facebook.com/profile.php?id=61595366676123"><span class="ic">📘</span><span>Facebook — TIP Lab.mm<small>Reels + သင်ခန်းစာ လင့်များ</small></span></a>
     </div>
     <h2>မျှဝေနေတဲ့ အပိုင်းများ</h2>
+    <p class="hint">ကတ် တစ်ခုခုကို နှိပ်လိုက်ရင် အဲဒီ အပိုင်းရဲ့ YouTube playlist ကို တန်း ရောက်ပါမယ်။</p>
     <div class="grid">
-      <div class="card"><b>📊 Excel &amp; Google Sheets</b><p>ဖော်မြူလာများ, အစီရင်ခံစာများ, ရုံးသုံး လက်တွေ့ နည်းလမ်းများ</p></div>
-      <div class="card"><b>🤖 ChatGPT &amp; AI Prompt များ</b><p>AI ကို အလုပ် တွင်ကျယ်အောင် ခိုင်းနည်း, copy ကူးသုံးနိုင်တဲ့ prompt များ</p></div>
-      <div class="card"><b>🗂️ Office &amp; Workspace Tips</b><p>Word, PowerPoint နဲ့ နေ့စဉ် ရုံးသုံး လျှို့ဝှက်ချက်များ</p></div>
-      <div class="card"><b>💻 Computer Tips &amp; Shortcuts</b><p>Windows shortcut များ နဲ့ အချိန် သက်သာစေမယ့် နည်းလမ်းများ</p></div>
-      <div class="card"><b>📰 Tech &amp; AI News</b><p>နည်းပညာ သတင်းများကို မူရင်း အရင်းအမြစ် နဲ့ တကွ မျှဝေပါတယ်</p></div>
-      <div class="card"><b>🎓 XL သင်ခန်းစာ အပြည့်အစုံ</b><p>၃၅ မိနစ် အပြည့်အစုံ သင်ခန်းစာများ — အစ အဆုံး တစ်ခါတည်း</p></div>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLPWvDFtBD9y8"><b>📊 Excel &amp; Google Sheets</b><p>ဖော်မြူလာများ, အစီရင်ခံစာများ, ရုံးသုံး လက်တွေ့ နည်းလမ်းများ</p><span class="go">▶ Playlist ကြည့်ရန်</span></a>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLP9_zFNSDR8E"><b>🤖 ChatGPT &amp; AI Prompt များ</b><p>AI ကို အလုပ် တွင်ကျယ်အောင် ခိုင်းနည်း, copy ကူးသုံးနိုင်တဲ့ prompt များ</p><span class="go">▶ Playlist ကြည့်ရန်</span></a>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLfcIjBsWA6ec"><b>🗂️ Office &amp; Workspace Tips</b><p>Word, PowerPoint နဲ့ နေ့စဉ် ရုံးသုံး လျှို့ဝှက်ချက်များ</p><span class="go">▶ Playlist ကြည့်ရန်</span></a>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLb4lyhS319ok"><b>💻 Computer Tips &amp; Shortcuts</b><p>Windows shortcut များ နဲ့ အချိန် သက်သာစေမယ့် နည်းလမ်းများ</p><span class="go">▶ Playlist ကြည့်ရန်</span></a>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLflpq7BDGK4A"><b>📰 Tech &amp; AI News</b><p>နည်းပညာ သတင်းများကို မူရင်း အရင်းအမြစ် နဲ့ တကွ မျှဝေပါတယ်</p><span class="go">▶ Playlist ကြည့်ရန်</span></a>
+      <a class="card" href="https://www.youtube.com/playlist?list=PLOEUAYkxvM2U"><b>🎓 XL သင်ခန်းစာ အပြည့်အစုံ</b><p>၃၅ မိနစ် အပြည့်အစုံ သင်ခန်းစာများ — အစ အဆုံး တစ်ခါတည်း</p><span class="go">▶ Playlist ကြည့်ရန်</span></a>
     </div>
     <h2>လေ့ကျင့်ခန်း ဖိုင်များ (အခမဲ့)</h2>
     <div class="note">သင်ခန်းစာ တိုင်းမှာ လက်တွေ့ လေ့ကျင့်နိုင်တဲ့ practice ဖိုင် အခမဲ့ ပါပါတယ်။ ဖိုင်တွေကို <b>YouTube Channel က video တစ်ခု ချင်းစီရဲ့ description</b> ထဲမှာ လင့် ထည့်ပေးထားပါတယ် — video ကို ဖွင့်, description ကို ဖွင့်ပြီး လင့်ကို နှိပ်ရုံပါပဲ။ လိုက်လုပ်ကြည့်ပြီး မရတာ ရှိရင် comment မှာ မေးခဲ့ပါ, သင်ခန်းစာ အဖြစ် ပြန် မျှဝေပေးပါမယ်။</div>
